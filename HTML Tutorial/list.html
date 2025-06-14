@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    
+    <main>
+        <!-- Lists are used to represent real life list data and there are 2 types of list below -->
+
+        <!-- 1 Unordered List // isme sirf elements add hote rhte h -->
+        <ul>                <!-- <ul>  represents unordered list-->
+            <li>Apple</li>  <!-- list bnane pr hmare items bullet points pr display honge-->
+             <ul>           <!-- Apple ka subset -->
+                <li>color : red</li>
+                <li>season : winters</li>
+            </ul>
+
+            <li>Mango</li>
+            <ul>           <!-- Mango ka subset -->
+                <li>color : yellow</li>
+                <li>season : summer </li>
+            </ul>
+            <li>Lichi</li>
+        </ul>
+
+              <hr>   <!-- This is "Hr Tag" and it is used to Display a horizontal line(ruler/scale), used to separate content , means uprwale and niche wale code ke bich me ek line ajaegi-->
+
+         <!-- 2 Ordered List // isme count ke sath elements add hota h  -->
+         <ol>                <!-- <ol>  represents ordered list-->
+            <li>Goava</li>  <!-- list bnane pr hmare items bullet points pr display honge-->
+             <ol>           <!-- Apple ka subset -->
+                <li>color : Green</li>
+                <li>season : summer</li>
+            </ol>
+
+            <li>Banana</li>
+            <ol>           <!-- Mango ka subset -->
+                <li>color : yellow</li>
+                <li>season : summer </li>
+            </ol>
+            <li>Lichi</li>
+        </ol>
+    </main>
+
+     <!--*********************************************************************-->
+      
+     <hr>   <!-- This is "Hr Tag" and it is used to Display a horizontal line(ruler/scale), used to separate content , means uprwale and niche wale code ke bich me ek line ajaegi-->
+
+     <!-- Table Tags are used to represent real life table data.
+     <tr>    used to display talble "row"
+     <td>    used to display talble "data"
+     <th>    used to display talble "header" -->
+     
+        <Table>                     <!-- Table Tag start here and bich me sara content hoga  -->
+             <thead>                <!-- thead used to wrap table head  -->   <!--thead start --> 
+
+            <caption> Student data</caption>   <!--caption is used to tell what we are writing below eg:- Student data -->
+
+            <tr>                    <!--For Displaying Row in our webpage-->
+                <th> Name </th>     <!--For Displaying Header in our webpage-->
+                <th> Roll no </th>  <!--For Displaying Header in our webpage-->
+             </tr>
+
+             </thead>               <!-- thead end-->
+             
+
+             <tbody>                <!-- to wrap table body  // tbody start -->
+            <tr>
+                <td>Sahil</td>        <!--For Displaying Data in our webpage-->
+                <td>00315607321</td>  <!--For Displaying Data in our webpage-->
+            </tr>
+            
+            <tr>
+                <td>Hritik</td>
+                <td>79515607321</td>
+            </tr>
+
+            </tbody>  <!-- tbody end -->
+
+        </Table>                     <!--Table Tag end here -->
+
+
+     <!--*********************************************************************-->
+
+    <hr>   <!-- This is "Hr Tag" and it is used to Display a horizontal line(ruler/scale), used to separate content , means uprwale and niche wale code ke bich me ek line ajaegi-->
+
+     <!-- Tables Tags are used to represent real life table data.
+     <tr>    used to display talble row
+     <td>    used to display talble data
+     <th>    used to display talble header -->
+     
+        <Table>
+             <thead>       
+
+            <caption> Student data</caption>   
+
+            <tr>                  
+                <th colspan="2">       <!-- 2 information ko single word(column) me represent krne ke liye * colspan="2" * ka use kiya hai-->
+                     INFORMATION </th>     
+             </tr>
+             </thead>     
+             
+
+             <tbody>   <!-- to wrap table body  // tbody start -->
+            <tr>
+                <td>Nikita</td>        <!--For Displaying Data in our webpage-->
+                <td>55</td>
+            </tr>
+            
+            <tr>
+                <td>Bhavya</td>
+                <td>77</td>
+            </tr>
+
+            </tbody>  <!-- tbody end -->
+        </Table>
+
+
+             <!--*********************************************************************-->
+
+             <hr>   <!-- This is "Hr Tag" and it is used to Display a horizontal line(ruler/scale), used to separate content , means uprwale and niche wale code ke bich me ek line ajaegi-->
+
+             <!-- FORM in HTML := Forms are used to collect data from the user , Eg:- Login / Sign up / help requests / contact me -->
+             <!-- ACTION in Form := Action attribute is used to define what action needs to be performed when a form is submitted -->
+
+
+             <h2>Registratiion Form</h2>
+             <form  action = "/action.php"> 
+
+             <input type = "text" placeholder = "Username">       <!--  Form Element : Input // isme *text* type ka input hai isliye kuch b text input kr paenge-->
+             <br>
+
+             <input type = "password" placeholder = "password">   <!--  Form Element : Input // isme *password* type ka input hai isliye jo b text input me type krenge wo hide hoga -->
+             <br>
+
+             <h5> Select your class </h5>
+
+             <lable for="101">     <!-- iski help se class 11 pr click krenge fir b tik ho jaega-->
+            <input type = "radio" value= " class 11"  name="class">class 11    <!-- "radio" ki help se choose krne ka option miljaega "class 11" ko-->
+             </lable>
+           
+             <br>
+
+             <lable for="102">     <!-- iski help se class 12 pr click krenge fir b tik ho jaega-->
+            <input type = "radio" value= " class 12"  name="class">class 12    <!-- "radio" ki help se choose krne ka option miljaega "class 12" ko  // "class 11" or "class 12" dono me se ek hi choose kt stke h webpage pr-->
+             </lable>
+
+             <br>
+
+             <h5> Select you fav Subjects </h5>
+             
+             
+
+             <label for="math">
+                <input type="checkbox" value="math" name="subject" id="101"> Math   <!-- to select // eg:- selecting subjects -->
+             </label>
+
+              <label for="phy">
+                <input type="checkbox" value="phy" name="subject" id="102"> Phy     <!-- to select // eg:- selecting subjects -->
+             </label>
+
+              <label for="chem">
+                <input type="checkbox" value="chem" name="subject" id="103"> chem   <!-- to select // eg:- selecting subjects -->
+             </label>
+
+              <label for="bio">
+                <input type="checkbox" value="bio" name="subject" id="104"> bio     <!-- to select // eg:- selecting subjects -->
+             </label>
+
+             <br>
+             <br>
+
+            Select your City
+             <select name="city">
+             <option value="Delhi"> Delhi </option>  <!-- used to select name eg:- city ,id -->
+             <option value="Banglor"> Banglor </option> 
+             <option value="Mumbai"> Mumbai </option> 
+             <option value="Bihar"> Bihar </option> 
+             </select>
+
+             <br>
+             <br>
+
+             <textarea name ="Feedback" id="101" placeholder="please give your valueable Feedback here" rows=5></textarea> <!-- to get input from a user in the form of feedback eg:-  feedback , discription -->
+
+             <br>
+
+             <input type ="submit" value="submit">   <!--this creates a submit button-->
+
+            </form>
+
+              <hr>
+
+             <!--*********************************************************************-->
+             
+             <!-- iframe Tag is used to show website inside our website // eg:- niche jo code ha wo hamne youtube pr jakr ek video play ki -> and click on "Share" -> then click on " Embed " -> then side me "iframe" code a jaega jise hmne copy krke niche paste kr diya h niche -->
+             <!-- niche wale code se hmari website pr niche jo hmne video ka iframe code dala h wo youtube video play hogi  // sare wbsite iframe wale code ka access nhi deti eg: google-->
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/Wdjh81uH6FU?si=mfHLDOo_Gy93Syt3" 
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+             allowfullscreen></iframe>
+
+             <br>
+
+              <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/India"> </iframe>    <!-- iss iframe tag se hmne apni website pr "wikipedia" ka webpage show krwa diya -->
+              <br>
+              <iframe src="https://google.com"></iframe>                                               <!-- sare wbsite iframe wale code ka access nhi deti eg: google isliye iske space me blank show hoga--> 
+
+
+              <video src="/Kishu.mp4" control loop>My Video</video> <!-- hmari khudki video ko file me add krke usko rename krdiya and uska name type krdiya-->
+ 
+              <!--xx-->
+
+    <footer></footer>
+</body>
+</html>
